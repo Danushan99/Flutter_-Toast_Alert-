@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App Learning',
+      title: 'app',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter Motion Toast"),
+          title: Text("Flutter Motion ToastApp"),
         ),
         body: MyHomePage(),
       ),
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Container(
                 width: 250,
-                height: 50,
+                height: 60,
                 margin: EdgeInsets.only(top: 10),
                 child: ElevatedButton(
                   onPressed: () {
@@ -56,13 +56,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void successMotionToast() {
     MotionToast.success(
-      title: "Success Motion Toast",
+      title: "Successfully Sent",
       titleStyle: TextStyle(fontWeight: FontWeight.bold),
       description: "Example of success motion toast",
       descriptionStyle: TextStyle(fontSize: 15),
       width: 300,
       position: MOTION_TOAST_POSITION.BOTTOM,
-      toastDuration: Duration(seconds: 5),
+      toastDuration: Duration(seconds: 4),
     ).show(context);
   }
 }
