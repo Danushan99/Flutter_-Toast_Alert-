@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:motion_toast/motion_toast.dart';
-import 'package:motion_toast/resources/arrays.dart';
 
 Widget toast = Container(
   padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
